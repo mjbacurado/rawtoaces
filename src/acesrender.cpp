@@ -738,7 +738,7 @@ int AcesRender::openRawPath ( const char * pathToRaw ) {
 #endif
     {
         if ( _opts.use_bigfile )
-            _opts.ret = _rawProcessor->open_file ( pathToRaw, 1 );
+            _opts.ret = _rawProcessor->open_file ( pathToRaw );
         else
             _opts.ret = _rawProcessor->open_file ( pathToRaw );
     }
